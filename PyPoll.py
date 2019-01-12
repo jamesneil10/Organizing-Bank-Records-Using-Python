@@ -40,6 +40,9 @@ with open(csvpath, newline='') as csvfile:
     for x in votes:
         percentage.append(round(int(x)/total_votes*100,2))
 
+        percent_formatted = ['{}%'.format(p) for p in percentage]
+
+
 #print the results
     print("Election Results")
     print("------------------------")
